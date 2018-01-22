@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <p>{{ getDescription() }}</p>
+  
+</div>
+<div>
+<p>{{ user.name }}</p>
+<p>{{ user.age }}</p>
+<p>{{ user.birthday | date: 'dd/MM/yyyy'}}</p>
+
+<!-- (click) : évènement déclancheur -->
+<button (click)="changeTitle($event)">Change title</button>
+
+
+<button [class] = 'buttonColor' (click)='changeColor()'>Change button color</button>
+
+</div>
