@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1> Users </h>
+
+<ul>
+
+  <app-user-item [user]="user" *ngFor='let u of users' (click)='selectUser(u)' [userName]='u.name'></app-user-item>
+
+</ul>
+
+<div *ngIf='selectedUser'>
+  <p>{{ selectedUser.name }}</p>
+  <p>{{ selectedUser.jobTitle }}</p>
+  <img [src]= ectedUser.image'/>
+</div>
